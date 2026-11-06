@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Productivity System</title>
+    <link rel="stylesheet" href="style.css">
+<head>
+
+<body>
+
+    <header>
+        <h1>My Student Dashboard</h1>
+        <p.Stay Organised,Stay productive!</p>
+    </header>
+    <div class="dashboard">
+         
+        <nav class="sidebar">
+            <h2>Menu</h2>
+
+    <a href="#dashboard">Dashboard</a>
+    <a href="#tasks">My Tasks</a>
+    <a href="#assignments">Assignments</a>
+    <a href="#study-planner">Study Planner</a>
+    <a href="#progress">My Progress</a>
+</nav>
+        <nav>
+        
+        <main class="content" id="dashboard">
+          
+            <h2>Welcome Back!</h2>
+            <p>Manage your studies in one place.</p>
+            <div class="cards">
+
+                <div class="card">
+                    <h3>My Tasks</h3>
+                    <p>Manage your daily tasks.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Assignments</h3>
+                    <p>Keep track of deadlines.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Study Planner</h3>
+                    <p>Plan your study sessions.</p>
+                </div>
+
+            </div>
+
+        </main>
+
+    <div>
+<section id="tasks">
+    <h2>My Tasks</h2>
+
+    <form id="task-form">
+        <input
+            type="text"
+            id="task-input"
+            placeholder="Enter your task..."
+            required
+        >
+        <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="task-list"></ul>
+</section>
+<section id="assignments">
+    <h2>My Assignments</h2>
+
+    <form id="assignment-form">
+
+        <input
+            type="text"
+            id="assignment-name"
+            placeholder="Enter assignment name"
+            required
+        >
+
+        <input
+            type="date"
+            id="assignment-date"
+            required
+        >
+
+        <button type="submit">Add Assignment</button>
+
+    </form>
+
+    <ul id="assignment-list"></ul>
+</section>
+<section id="study-planner">
+    <h2>My Study Planner</h2>
+
+    <form id="study-form">
+
+        <input
+            type="text"
+            id="subject-name"
+            placeholder="Enter subject name"
+            required
+        >
+
+        <input
+            type="date"
+            id="study-date"
+            required
+        >
+
+        <input
+            type="time"
+            id="study-time"
+            required
+        >
+
+        <button type="submit">Add Study Session</button>
+
+    </form>
+
+    <ul id="study-list"></ul>
+</section>
+<section id="progress">
+    <h2>My Progress</h2>
+
+    <div class="progress-card">
+        <h3>Total Tasks</h3>
+        <p id="total-tasks">0</p>
+    </div>
+
+    <div class="progress-card">
+        <h3>Completed Tasks</h3>
+        <p id="completed-tasks">0</p>
+    </div>
+
+    <div class="progress-card">
+        <h3>Pending Tasks</h3>
+        <p id="pending-tasks">0</p>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
